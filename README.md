@@ -4,7 +4,7 @@ Welcome to the **FlavorTown Street Food** interactive menu application! This pro
 
 ---
 
-## he Feature Engine: How It Works
+## The Feature Engine: How It Works
 
 Instead of overcomplicating the system with heavy external frameworks, this architecture utilizes a direct **Event-Driven UI Bridge**. Every interaction follows a strict three-step execution pipeline:
 
@@ -16,7 +16,7 @@ Instead of overcomplicating the system with heavy external frameworks, this arch
 
 ---
 
-## 🛠️ Code Architecture Blueprint
+## Code Architecture Blueprint
 
 ### 1. Structural Layer (`index.html`)
 The application layout uses strict semantic tags (`<header>`, `<main>`, `<section>`) to define logical component domains. This ensures accessibility and a professional layout tree.
