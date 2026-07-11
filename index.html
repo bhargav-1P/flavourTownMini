@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour town</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf8f2;
+    margin: 0;
+    padding: 20px;
+  }
+  section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+    <script>
+        let billTotal = 0;
+
+        function addToCart(item, price) {
+            billTotal += price;
+            document.getElementById('bill-total').textContent = billTotal.toFixed(2);
+            alert(`${item} added to cart!`);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Flavour town</h1>
+        <p>Welcome to Flavour town!</p>
+    </header>
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <p>Check out our delicious menu items below:</p>
+            <ul>
+                <li>Classic Pizza - $8.99 <button onclick="addToCart('Classic Pizza', 8.99)">Add to Cart</button></li>
+                <li>Margherita Pizza - $10.99 <button onclick="addToCart('Margherita Pizza', 10.99)">Add to
+                        Cart</button></li>
+                <li>Pepperoni Pizza - $12.99 <button onclick="addToCart('Pepperoni Pizza', 12.99)">Add to Cart</button>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Your Order Ledger</h2>
+            <p>Current Bill Total: $<span id="bill-total">0.00</span></p>
+        </section>
+    </main>
+
+</body>
+
+</html>
